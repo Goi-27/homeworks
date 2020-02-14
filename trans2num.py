@@ -4,50 +4,35 @@
 def trans1(s):
     if len(s) <= 2:
         s[1] = s[1]
-    elif s[2] == '零':
-        s[2] = 0
-    elif s[2] == '一':
-        s[2] = 1
-    elif s[2] == '二':
-        s[2] = 2
-    elif s[2] == '三':
-        s[2] = 3
-    elif s[2] == '四':
-        s[2] = 4
-    elif s[2] == '五':
-        s[2] = 5
-    elif s[2] == '六':
-        s[2] = 6
-    elif s[2] == '七':
-        s[2] = 7
-    elif s[2] == '八':
-        s[2] = 8
-    elif s[2] == '九':
-        s[2] = 9
-    elif s[2] == '十':
-        s[2] = 10
-    elif s[3] == '零':
-        s[3] = 0
-    elif s[3] == '一':
-        s[3] = 1
-    elif s[3] == '二':
-        s[3] = 2
-    elif s[3] == '三':
-        s[3] = 3
-    elif s[3] == '四':
-        s[3] = 4
-    elif s[3] == '五':
-        s[3] = 5
-    elif s[3] == '六':
-        s[3] = 6
-    elif s[3] == '七':
-        s[3] = 7
-    elif s[3] == '八':
-        s[3] = 8
-    elif s[3] == '九':
-        s[3] = 9
-    elif s[3] == '十':
-        s[3] = 10
+        return s
+    if s[0]=='整数':
+        n=1
+    elif s[1]=='增加' or s[1]=='减少':
+        n=1
+    elif s[0]=='如果':
+        n=7
+    if s[len(s)-n] == '零':
+        s[len(s)-n] = 0
+    elif s[len(s)-n] == '一':
+        s[len(s)-n] = 1
+    elif s[len(s)-n] == '二':
+        s[len(s)-n] = 2
+    elif s[len(s)-n] == '三':
+        s[len(s)-n] = 3
+    elif s[len(s)-n] == '四':
+        s[len(s)-n] = 4
+    elif s[len(s)-n] == '五':
+        s[len(s)-n] = 5
+    elif s[len(s)-n] == '六':
+        s[len(s)-n] = 6
+    elif s[len(s)-n] == '七':
+        s[len(s)-n] = 7
+    elif s[len(s)-n] == '八':
+        s[len(s)-n] = 8
+    elif s[len(s)-n] == '九':
+        s[len(s)-n] = 9
+    elif s[len(s)-n] == '十':
+        s[len(s)-n] = 10
     return s
 
 
